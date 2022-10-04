@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_graph"
+    app:startDestination="@id/mainScreen">
+
+    <fragment
+        android:id="@+id/mainScreen"
+        android:name="uz.gita.futboollegueapplication.ui.screens.MainScreen"
+        android:label="fragment_main_screen"
+        tools:layout="@layout/screen_main">
+        <action
+            android:id="@+id/action_mainScreen_to_screen2"
+            app:destination="@id/screen2" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/screen_2"
+        android:id="@+id/screen2"
+        android:name="uz.gita.futboollegueapplication.ui.screens.Screen2"
+        android:label="Screen2" />
+</navigation>
